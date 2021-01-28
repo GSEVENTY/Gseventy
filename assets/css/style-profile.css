@@ -1,0 +1,105 @@
+.profile {
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  background: #18191a;
+  padding-top: 50px;
+}
+
+.profile-card {
+  width: 1200px;
+  margin-top: 10px;
+  background: var(--card);
+  border: 2px solid #242526;
+  border-radius: 9px;
+  padding: 10px;
+}
+
+.profile-card-content {
+  display: flex;
+}
+
+.profile-card-img img {
+  height: 240px;
+  width: 230px;
+  border-radius: 50%;
+}
+
+.profile-card-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.profile-name {
+  padding: 0px 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-username {
+  padding: 0px 5px;
+}
+
+.profile-bio-head {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.profile-bio {
+  padding: 0px 5px;
+}
+
+.card-writer div a {
+  margin-right: 5px;
+}
+
+.card-writer div a:hover {
+  color: red;
+}
+
+.card-ext-link a {
+  margin-right: 5px;
+}
+
+.card-ext-link a:hover {
+  color: white;
+}
+
+.profile-card-body a {
+  color: white;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.profile-card-body a:hover {
+  color: gray;
+  border-bottom: 2px solid springgreen;
+}
+
+.update-profile-card-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.update-profile-card-body button {
+  width: max-content;
+  padding: 3px;
+  border-radius: 2px;
+  margin-left: 8px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.update-profile-card-body button:hover {
+  background-color: darkolivegreen;
+  cursor: pointer;
+  color: rgb(17, 17, 17);
+}
+
+.profile-card-body p {
+  color: red;
+}

@@ -23,15 +23,16 @@ if (isset($_POST['login'])) {
         $db_user_id = $user->user_id;
         $db_user_role = $user->user_role;
         $db_user_firstname = $user->user_firstname;
+        $db_username = $user->username;
         $logged = true;
 
-        
-        
+
+        $_SESSION['username'] = $db_username;
         $_SESSION['user_id'] = $db_user_id;
         $_SESSION['user_role'] = $db_user_role;
         $_SESSION['user_firstname'] = $db_user_firstname;
         $_SESSION['logged_in'] = $logged;
-       
+
         header("Location: index.php");
     }
 }

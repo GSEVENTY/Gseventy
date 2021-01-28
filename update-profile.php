@@ -25,7 +25,6 @@ if (isset($_POST['update-bio'])) {
     $sql = "UPDATE users SET biography = :ub WHERE user_id = :ui";
     $stmt = $connection->prepare($sql);
     $stmt->execute(['ub' => $user_bio, 'ui' => $user_id]);
-    $users = $stmt->fetchAll();
 
     header("Location: profile.php");
     exit();

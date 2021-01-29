@@ -4,7 +4,8 @@
             <div class="post-card-img">
                 <input class="post-img" type="text" placeholder="Image Link">
                 <input class="post-img-credit" type="text" placeholder="Image Credit">
-                <input class="post-ext-link" type="text" placeholder="Link of News">
+                <input class="post-tags" type="text" placeholder="Tags">
+                <input class="post-ext-link" type="text" placeholder="News Link">
                 <select class="post-category">
                     <option value=''>Gaming</option>
                     <option value=''>Hardware</option>

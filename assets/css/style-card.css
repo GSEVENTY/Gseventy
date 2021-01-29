@@ -136,7 +136,6 @@ button {
 
 .sidebar-footer a,
 p {
-  display: none;
   padding: 10px 50px;
 }
 
@@ -144,6 +143,9 @@ p {
   margin-left: 14px;
 }
 
+.s-a {
+  display: none;
+}
 .sidebar-footer a {
   margin: 0px 0px;
   font-size: 1rem;

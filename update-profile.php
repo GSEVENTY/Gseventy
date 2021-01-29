@@ -94,7 +94,7 @@ foreach ($users as $user) {
             </div>
             <div class="card-ext-link">
                 <a href="#">Edit</a>
-                <a target="_blank" href="#"><i class="external-link fa fa-external-link"></i></a>
+                <a target="_blank" href="#"><i class="external-link fas fa-external-link-alt"></i></a>
             </div>
         </div>
     </div>

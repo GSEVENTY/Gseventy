@@ -56,7 +56,7 @@
                     <span>Hardware</span>
                 </div>
                 <div class="card-ext-link">
-                    <a target="_blank" href="<?php echo $external_link ?>"><i class="external-link fa fa-external-link"></i></a>
+                    <a target="_blank" href="<?php echo $external_link ?>"><i class="external-link fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
             if (isset($_SESSION['user_role'])) {
                 if ($_SESSION['user_role'] == 'user') {
                     echo "<div class='dropdown'>";
-                    echo "<button class='dropbtn'><i class='login-signup fa fa-user'></i></button>";
+                    echo "<button class='dropbtn'><i class='login-signup fas as fa-sign-in-alt'></i></button>";
                     echo "<div class='dropdown-content'>";
                     echo "<a href='./profile.php'>Profile</a>";
                     echo "<a href='includes/logout.php'>Logout</a>";
@@ -25,7 +25,7 @@
                     echo "</div>";
                 } else if ($_SESSION['user_role'] == 'admin') {
                     echo "<div class='dropdown'>";
-                    echo "<button class='dropbtn'><i class='login-signup fa fa-user'></i></button>";
+                    echo "<button class='dropbtn'><i class='login-signup fas fa-user-cog'></i></button>";
                     echo "<div class='dropdown-content'>";
                     echo "<a href='./profile.php'>Profile</a>";
                     echo "<a href='./admin/admin-index.php'>Admin</a>";
@@ -35,7 +35,7 @@
                 }
             }
         } else {
-            echo "<a href='./login.php'><i class='fa fa-user'></i></a>";
+            echo "<a href='./login.php'><i class='login-signup fa fa-user'></i></a>";
         }
         ?>
         <!-- <a href='#' class="login-signup"><i class='fa fa-user'></i></a> -->

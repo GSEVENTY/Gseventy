@@ -24,10 +24,12 @@
     </div>
 
     <div class="sidebar-footer">
-        <a href="#" class="s-a">Contact us</a></br>
-        <a href="#" class="s-a">Write for us</a><br>
+        <a href="#" class="s-a">Contact us</a>
+        <a href="#" class="s-a">Write for us</a>
         <p class="s-a">&copy;2020 GSEVENTY</p>
-        <button class="sidebar-btn open" onclick="openSidebar()"><img id="list-icon" src="./assets/images/list1.png" alt="icon" style="width: 30px; height: 30px; color: white" /></button>
-        <button class="sidebar-btn close" onclick="closeSidebar()"><img id="list-icon" src="./assets/images/list2.png" alt="icon" style="width: 30px; height: 30px; color: white" /></button>
+        <!-- <button class="sidebar-btn open" onclick="openSidebar()"><img id="list-icon" src="./assets/images/list1.png" alt="icon" style="width: 30px; height: 30px; color: white" /></button> -->
+        <button class="sidebar-btn open" onclick="openSidebar()"><i class="fas fa-bars" style="font-size:32px; margin-left:2px;"></i></button>
+        <!-- <button class="sidebar-btn close" onclick="closeSidebar()"><img id="list-icon" src="./assets/images/list2.png" alt="icon" style="width: 30px; height: 30px; color: white" /></button> -->
+        <button class="sidebar-btn close" onclick="closeSidebar()"><i class="fas fa-bars" style="font-size:32px; margin-left:2px; color:lime;"></i></button>
     </div>
 </div>

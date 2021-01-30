@@ -24,50 +24,72 @@ if (isset($_POST['register_btn'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style-login-signup.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/register-style.css" />
     <title>Register</title>
 </head>
 
 <body>
-    <div class="signInContainer">
-        <div class="column">
-            <div class="header">
-                <a href="./index.php">
-                    <img src="./assets/images/logo_head.png" title="logo" alt="site logo" />
-                </a>
-                <h3>Register</h3>
-                <span>to continue to Website</span>
+    <div class="page">
+        <div class="container">
+            <div class="left">
+                <div class="login">Register</div>
+                <div class="eula">By registering in you agree to the ridiculously long terms that you didn't bother to read</div>
             </div>
+            <div class="right">
+                <form action="" method="POST">
+                    <div class="form">
+                        <div class="field-section">
+                            <?php echo $account->getError(Constants::$firstNameCharacters); ?>
+                            <input type="text" id="firstname" name="firstName" autocomplete="off" required />
+                            <label for="username" class="label-name">
+                                <span class="content-name"> First name </span>
+                            </label>
+                        </div>
 
-            <form action="" method="POST">
+                        <div class="field-section">
+                            <?php echo $account->getError(Constants::$usernameCharacters); ?>
+                            <?php echo $account->getError(Constants::$usernameTaken); ?>
+                            <input type="text" id="username" name="username" autocomplete="off" required />
+                            <label for="username" class="label-name">
+                                <span class="content-name"> Username </span>
+                            </label>
+                        </div>
 
-                <?php echo $account->getError(Constants::$firstNameCharacters); ?>
-                <input type="text" name="firstName" placeholder="First name" required />
+                        <div class="field-section">
+                            <?php echo $account->getError(Constants::$emailTaken); ?>
+                            <?php echo $account->getError(Constants::$emailInvalid); ?>
+                            <input type="email" name="email" id="email" autocomplete="off" required />
+                            <label for="email" class="label-name">
+                                <span class="content-name"> Email </span>
+                            </label>
+                        </div>
 
-                <?php echo $account->getError(Constants::$usernameCharacters); ?>
-                <?php echo $account->getError(Constants::$usernameTaken); ?>
-                <input type="text" name="username" placeholder="User name" required />
+                        <div class="field-section">
+                            <?php echo $account->getError(Constants::$passwordLength); ?>
+                            <input type="password" name="password" id="password" autocomplete="off" required />
+                            <label for="password" class="label-name">
+                                <span class="content-name"> Password </span>
+                            </label>
+                        </div>
 
-                <?php echo $account->getError(Constants::$emailTaken); ?>
-                <?php echo $account->getError(Constants::$emailInvalid); ?>
-                <input type="email" name="email" placeholder="Email" required />
-
-                <?php echo $account->getError(Constants::$passwordLength); ?>
-                <input type="password" name="password" placeholder="Password" required />
-
-                <input type="submit" name="register_btn" value="Register" />
-            </form>
-
-            <a href="./login.php" class="signInMessage">Already have and account? Sign in here!</a>
+                        <div>
+                            <input type="submit" id="submit" name="register_btn" value="Register" />
+                        </div>
+                </form>
+                <!-- <div class="link">
+              <a href="login.php">Login</a>
+            </div> -->
+            </div>
         </div>
     </div>
+    <script src="assets/js/app_login_register.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
 </body>
 
 </html>

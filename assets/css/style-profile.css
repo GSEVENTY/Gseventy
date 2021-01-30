@@ -5,10 +5,12 @@
   flex-direction: column;
   background: #18191a;
   padding-top: 50px;
+  padding-left: 60px;
 }
 
 .profile-card {
-  width: 1200px;
+  width: 85%;
+  min-width: 900px;
   margin-top: 10px;
   background: var(--card);
   border: 2px solid #242526;
@@ -104,9 +106,30 @@
   color: red;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 970px) {
+  .profile-card-content {
+    display: block;
+  }
   .profile-card {
-    max-width: 100%;
+    min-width: 440px;
+    width: 64%;
+  }
+  .profile-card-img img {
+    height: 100px;
+    width: 100px;
+  }
+  .profile-card-body {
+    margin: 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile {
+    padding-left: 0px;
+  }
+  .profile-card {
+    min-width: 320px;
+    width: 100%;
   }
 
   .profile-card-content {

@@ -103,3 +103,54 @@
 .profile-card-body p {
   color: red;
 }
+
+@media only screen and (max-width: 414px) {
+  .profile-card {
+    max-width: 100%;
+  }
+
+  .profile-card-content {
+    display: block;
+  }
+
+  .profile-card-img img {
+    height: 100px;
+    width: 100px;
+  }
+  .profile-card-body {
+    margin: 0px 0px;
+  }
+  .profile-name {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  .profile-card-body a {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .profile-username {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .profile-bio-head {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .profile-bio {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .update-profile-card-body {
+    margin: 0px 0px;
+  }
+  .update-profile-card-body button {
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+}

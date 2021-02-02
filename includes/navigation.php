@@ -15,7 +15,7 @@
         if (isset($_SESSION['logged_in'])) {
             // Giving different access to user on the basis of user role. 
             if (isset($_SESSION['user_role'])) {
-                if ($_SESSION['user_role'] == 'user') {
+                if ($_SESSION['user_role'] == 'user' || $_SESSION['user_role'] == 'writer') {
                     echo "<div class='dropdown'>";
                     echo "<button class='dropbtn'><i class='login-signup fas as fa-sign-in-alt'></i></button>";
                     echo "<div class='dropdown-content'>";

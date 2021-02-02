@@ -34,7 +34,7 @@
             $external_link = $post->external_link;
             $post_image = $post->post_image;
             $image_credit = $post->image_credit;
-
+            $post_category = $post->post_category_id;
     ?>
 
             <div class="card">
@@ -61,7 +61,17 @@
                     <div class="card-vote">
                         <!-- <i class="far fa-thumbs-up"></i>
                     <span>20</span> -->
-                        <span>Hardware</span>
+                        <?php
+                        $sql = "SELECT * FROM categories WHERE cat_id = :ci";
+                        $stmt = $connection->prepare($sql);
+                        $stmt->execute(['ci' => $post_category]);
+                        $cats = $stmt->fetchAll();
+
+                        foreach ($cats as $cat) {
+                            $cat_title = $cat->cat_title;
+                        }
+                        echo "<span>{$cat_title}</span>";
+                        ?>
                     </div>
                     <div class="card-ext-link">
                         <a target="_blank" href="<?php echo $external_link ?>"><i class="external-link fas fa-external-link-alt"></i></a>

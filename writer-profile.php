@@ -48,40 +48,6 @@ foreach ($users as $user) {
     </div>
 <?php } ?>
 
-<div class="cards">
-    <div class="card">
-        <div class="card-writer">
-            <span><a href="/profile.html">Bucky</a></span>
-            <div>
-                <span>3 days ago</span>
-            </div>
-        </div>
-        <div class="card-content">
-            <div class="card-img">
-                <img src="https://media.comicbook.com/2020/05/gta-5-grand-theft-auto-1220406.jpeg?auto=webp&width=1200&height=628&crop=1200:628,smart" alt="">
-                <span>Image Credit: NDTV</span>
-            </div>
-            <div class="card-body">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel.</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam libero veritatis
-                    corporis
-                    soluta reprehenderit modi magni eveniet cumque, saepe eius incidunt deserunt veniam
-                    doloribus
-                    est error, eum fuga? Impedit, sunt nesciunt! Nisi, accusantium adipisci! Doloremque, aliquam
-                    aliquid iusto minus recusandae iste, cum magni hic quaerat, libero voluptatem! Reiciendis,
-                    consequuntur?</p>
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="card-vote">
-                <!-- <i class="far fa-thumbs-up"></i>
-                    <span>20</span> -->
-                <span>Hardware</span>
-            </div>
-            <div class="card-ext-link">
-                <a target="_blank" href="#"><i class="external-link fas fa-external-link-alt"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
+<?php include "writer_post.php" ?>
+
 <?php include "./includes/footer.php" ?>

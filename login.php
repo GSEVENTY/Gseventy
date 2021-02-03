@@ -43,8 +43,8 @@ if (isset($_POST['login'])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style-login-signup.css" />
-    <title>Login In</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/register-style.css" />
+    <title>Login - Gseventy</title>
 </head>
 
 <body>
@@ -52,35 +52,35 @@ if (isset($_POST['login'])) {
         <div class="container">
             <div class="left">
                 <div class="login">Login</div>
-                <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
+                <div class="eula"><a href="register.php">Don't have account? Register here.</a></div>
             </div>
             <div class="right">
-                <svg viewBox="0 0 320 300">
-                    <defs>
-                        <linearGradient inkscape:collect="always" id="linearGradient" x1="13" y1="193.49992" x2="307" y2="193.49992" gradientUnits="userSpaceOnUse">
-                            <stop style="stop-color:#60afeb;" offset="0" id="stop876" />
-                            <stop style="stop-color:#f224d0;" offset="1" id="stop878" />
-                        </linearGradient>
-                    </defs>
-                    <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
-                </svg>
-                <div class="form">
-                    <form action="" method="POST">
-                        <?php echo $account->getError(Constants::$loginFailed); ?>
-                        <label for="username">Username</label>
-                        <input type="text" name="username" id="username" required />
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required />
-                        <input type="submit" id="submit" name="login" value="Login" />
-                        <!-- <p> Error!! </p> -->
-                        <div class="link">
-                            <a href="register.php">Need an account? Register Here</a>
+                <form action="" method="POST">
+                    <div class="form">
+                        <div class="field-section">
+                            <?php echo $account->getError(Constants::$loginFailed); ?>
+                            <input type="text" id="username" name="username" autocomplete="off" required />
+                            <label for="username" class="label-name">
+                                <span class="content-name"> Username </span>
+                            </label>
                         </div>
-                    </form>
-                </div>
+                        <div class="field-section">
+                            <input type="password" name="password" id="password" autocomplete="off" required />
+                            <label for="password" class="label-name">
+                                <span class="content-name"> Password </span>
+                            </label>
+                        </div>
 
+                        <div>
+                            <input type="submit" id="submit" name="login" value="Login" />
+                        </div>
+                </form>
             </div>
+            <!-- <div class="link">
+              <a href="login.php">Login</a>
+            </div> -->
         </div>
+    </div>
     </div>
     <script src="assets/js/app_login_register.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>

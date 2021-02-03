@@ -31,7 +31,7 @@ if (isset($_POST['register_btn'])) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="assets/css/register-style.css" />
-    <title>Register</title>
+    <title>Register - Gseventy</title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@ if (isset($_POST['register_btn'])) {
         <div class="container">
             <div class="left">
                 <div class="login">Register</div>
-                <div class="eula">By registering in you agree to the ridiculously long terms that you didn't bother to read</div>
+                <div class="eula"><a href="login.php">Already have account? Login here.</a></div>
             </div>
             <div class="right">
                 <form action="" method="POST">
@@ -86,7 +86,9 @@ if (isset($_POST['register_btn'])) {
               <a href="login.php">Login</a>
             </div> -->
             </div>
+
         </div>
+
     </div>
     <script src="assets/js/app_login_register.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
